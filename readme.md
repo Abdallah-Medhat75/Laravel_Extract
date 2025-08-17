@@ -1,5 +1,5 @@
 <h1>Intoduction</h1>
-<p>I found some hosting problems with zips uploading, and some routine things we do when we extract a Laravel Project, So I decided to make a PHP script that automates all these things, and once it finishes, the project direcly works in the hosting</p>
+<p>I found some hosting problems with zips uploading, and some routine things we do when we extract a Laravel Project, So I decided to make a PHP script that automates all these things, and once it finishes, the project directly works in the hosting</p>
 <h2 style="color: lightseagreen;">How to use ?</h2>
 <ol>
     <li>What it mainly depends on:</li>
