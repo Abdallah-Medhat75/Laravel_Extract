@@ -11,7 +11,7 @@
     <ul>
         <li>You will have two zip files, one has the index.php, the root of the Laravel project in general, and since that index.php is in public directory by default, the zip will be named public.zip by default, using winrar</li>
         <li>The Second one Will be the zip has the whole project, including the Laravel default directories like: resources, storage, database...etc</li>
-        <li>You will have to change the $url variable to the one you have in the github, changing is explained in the extraction script itself, see this repo I have to know the structure well: https://github.com/Abdallah-Medhat75/Laravel_Project</li>
+        <li>You will have to change the $url variable to the one you have in the github, changing is explained in the extraction script itself, see this repo I have, to know the structure well: https://github.com/Abdallah-Medhat75/Laravel_Project</li>
         <li>NOTE: Get the link of the Zip file, when you click Code button you will see a one called " Download ZIP " below, the link to that file that you will copy</li>
     </ul>
     <br>
