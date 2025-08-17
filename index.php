@@ -2,7 +2,7 @@
 
     include __DIR__ . '/functions.php';
     // The two variables mentioned in readme.md
-    // First one: The url to the github repo ( Must change ! )
+    // First one: The url to the github repo ( Must change ! ), this is a working link btw, a Laravel project I have
     $url = 'https://github.com/Abdallah-Medhat75/Laravel_Project/archive/refs/heads/master.zip';
     // Second one: the path to the vendor and bootstrap in the index.php, it's optional, you can change that variable if you don't like the name core or any other reason
     $correctPath = 'core';
