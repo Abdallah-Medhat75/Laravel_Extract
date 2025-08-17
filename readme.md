@@ -23,4 +23,4 @@
     </ul>
 </ol>
 <h2 style="color: #2196f3">Notes: </h2>
-<p>The extract file, and the functions.php, the file that has the functions, will be deleted automatically after everything is done, the laravel project is the only thing will be left after the process is done</p>
+<p>The extract file, and the functions.php, the file that has the functions, will be deleted automatically after everything is done, the working extracted laravel project is the only thing will be left after the process is done</p>
