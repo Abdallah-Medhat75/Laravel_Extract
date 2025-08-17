@@ -4,7 +4,7 @@
 <ol>
     <li>What it mainly depends on:</li>
     <ul>
-        <li>It is built mainly to extract zips on github that has the public.zip, and the dist.zip, like this one: https://github.com/Abdallah-Medhat75/Laravel_Project</li>
+        <li>It is built mainly to extract zips on github that has the public.zip, and the dist.zip, like this one: https://github.com/Abdallah-Medhat75/Laravel_Project/archive/refs/heads/master.zip</li>
     </ul>
     <br>
     <li>The Github Repo:</li>
