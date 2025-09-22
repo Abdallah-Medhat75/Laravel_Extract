@@ -24,3 +24,4 @@
 </ol>
 <h2 style="color: #2196f3">Notes: </h2>
 <p>The extract file, and the functions.php, the file that has the functions, will be deleted automatically after everything is done, the working extracted laravel project is the only thing will be left after the process is done</p>
+<p>Take a look here to for this deleting script, because both repos are strongly related: https://github.com/Abdallah-Medhat75/Deleting</p>
