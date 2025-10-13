@@ -30,8 +30,8 @@
     }
     function deleteNoNeedFiles($file) {
         unlink(__DIR__ . '/functions.php');
-        echo "Functions PHP File Has Been Deleted Successfully !<br>";
+        echo 'Functions PHP File Has Been Deleted Successfully !<br>' . PHP_EOL;
 
         unlink($file);
-        echo "Initial Extraction ZIP Removed Successfully !<br>";
+        echo 'Initial Extraction ZIP Removed Successfully !<br>' . PHP_EOL;
     }

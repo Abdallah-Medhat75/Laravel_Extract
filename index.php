@@ -18,7 +18,7 @@
         if ($zip->open($zipFile) === TRUE) {
             $zip->extractTo($absPath);
             $zip->close();
-            echo 'Initial Extraction Done Successfully !<br>';
+            echo 'Initial Extraction Done Successfully !<br>' . PHP_EOL;
 
             $extractDir = getDirsOnly($absPath)[0];
 
@@ -26,7 +26,7 @@
             $zip->open($extractDir . '/' . $targetZip);
             $zip->extractTo($absPath);
             $zip->close();
-            echo "Main Extraction ZIP File " . $targetZip . " Deleted Successfully<br>";
+            echo "Main Extraction ZIP File " . $targetZip . " Deleted Successfully<br>" . PHP_EOL;
             deleteFullDir($extractDir);
         } else {
             echo 'Extraction failed!';
