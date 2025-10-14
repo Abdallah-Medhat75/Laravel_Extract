@@ -1,37 +1,25 @@
 <?php
 
-    include __DIR__ . '/functions.php';
     // The two variables mentioned in readme.md
     // First one: The url to the github repo ( Must change ! ), this is a working link btw, a Laravel project I have
     $url = 'https://github.com/Abdallah-Medhat75/Laravel_Project/archive/refs/heads/master.zip';
     // Second one: the path to the vendor and bootstrap in the index.php, it's optional, you can change that variable if you don't like the name core or any other reason
     $correctPath = 'core';
 
+    $zip = new ZipArchive;
     $zipFile = 'test.zip';
     file_put_contents($zipFile, file_get_contents($url));
-    
-    function fullLaravelExtraction($absPath = __DIR__) {
-        global $zipFile;
-        $order = $absPath == __DIR__ ? 3 : 2;
 
-        $zip = new ZipArchive;
-        if ($zip->open($zipFile) === TRUE) {
-            $zip->extractTo($absPath);
-            $zip->close();
-            echo 'Initial Extraction Done Successfully !<br>' . PHP_EOL;
-
-            $extractDir = getDirsOnly($absPath)[0];
-
-            $targetZip = scandir($extractDir)[$order];
-            $zip->open($extractDir . '/' . $targetZip);
-            $zip->extractTo($absPath);
-            $zip->close();
-            echo "Main Extraction ZIP File " . $targetZip . " Deleted Successfully<br>" . PHP_EOL;
-            deleteFullDir($extractDir);
-        } else {
-            echo 'Extraction failed!';
-        }
+    if ($zip->open($zipFile) === TRUE) {
+        $zip->extractTo(__DIR__);
+        $zip->close();
+        echo 'Initial Extraction Done Successfully !<br>' . PHP_EOL;
+    } else {
+        echo 'Extraction Failed';
     }
+
+    require_once __DIR__ . '/functions.php';
+    
     fullLaravelExtraction();
     mkdir(__DIR__ . "/$correctPath");
     fullLaravelExtraction(__DIR__ . "/$correctPath");
