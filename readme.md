@@ -32,19 +32,11 @@
 <h2>For Linux Debian-based Users Only: </h2>
 <p>If You will run this from the command line make sure to change the owner to become you to avoid any warning or unexpected things</p>
 <p>First you need to become one of the sudoers, sign in as the root user, using this command:</p>
-<pre>
-    <code>su -</code>
-</pre>
+<pre><code>su -</code></pre>
 <p>Then write the root password, after you signed in, you must have access to sudo to do this, run: </p>
-<pre>
-    <code>sudo usermod -aG sudo YOUR_USERNAME</code>
-</pre>
+<pre><code>sudo usermod -aG sudo YOUR_USERNAME</code></pre>
 <p>change that YOUR_USERNAME with your actual user name, then restart the operating system</p>
 <p>After Becoming One From The sudoers, you can run this command if you will run this code from the TERMINAL:</p>
-<pre>
-    <code>sudo chown -R $USER:$USER .</code>
-</pre>
+<pre><code>sudo chown -R $USER:$USER .</code></pre>
 <p>If You will run it from a browser using apache, you will have to make the owner www-data, which is apache user, to make apache do anything without problems</p>
-<pre>
-    <code>sudo chown -R www-data:www-data .</code>
-</pre>
+<pre><code>sudo chown -R www-data:www-data .</code></pre>
