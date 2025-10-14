@@ -6,8 +6,8 @@
     /* su - */
     // Then write the root password, after you signed in, you must have access to sudo to do this, run:
     /* sudo usermod -aG sudo YOUR_USERNAME */
-    // change that YOUR_USERNAME with your actual user name, then restart the system
-    // After Becoming One From The sudoers, you can run this command if you will run this code from the command line:
+    // change that YOUR_USERNAME with your actual user name, then restart the operating system
+    // After Becoming One From The sudoers, you can run this command if you will run this code from the TERMINAL:
     /* sudo chown -R $USER:$USER . */
     // If You will run it from a browser using apache, you will have to make the owner www-data, which is apache user, to make apache do anything without problems
     /* sudo chown -R www-data:www-data . */
@@ -57,7 +57,7 @@
         $zip->open($extractDir . '/' . $targetZip);
         $zip->extractTo($absPath);
         $zip->close();
-        echo "Main Extraction ZIP File " . $targetZip . " Deleted Successfully<br>" . PHP_EOL;
+        echo "Initial Extraction ZIP File " . $targetZip . " Deleted Successfully<br>" . PHP_EOL;
     }
     function deleteNoNeedFiles($file) {
         global $extractDir;

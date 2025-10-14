@@ -25,5 +25,34 @@
 <h2 style="color: #2196f3">Notes: </h2>
 <p>The extract file, and the functions.php, the file that has the functions, will be deleted automatically after everything is done, the working extracted laravel project is the only thing will be left after the process is done</p>
 <p>Take a look here to for this deleting script, because both repos are strongly related: https://github.com/Abdallah-Medhat75/Deleting</p>
+
 <h2>Optimization: </h2>
 <p>Added Small Optimization to the code, first the main extraction ZIP which is called test.zip, was extracting its content twice, I avoided this by making it extracting once, and in the second time the function call the $extractDir doesn't change because of the changed flag $mainExtractDirExist + That made the feedback of the process more logical and clear, I am not sure if it's 100% stable like the old code, but I will find if there's vulnerabilities</p>
+
+<h2>For Linux Debian-based Users Only: </h2>
+<p>If You will run this from the command line make sure to change the owner to become you to avoid any warning or unexpected things</p>
+<p>First you need to become one of the sudoers, sign in as the root user, using this command:</p>
+<pre>
+    <code>
+        su -
+    </code>
+</pre>
+<p>Then write the root password, after you signed in, you must have access to sudo to do this, run: </p>
+<pre>
+    <code>
+        sudo usermod -aG sudo YOUR_USERNAME
+    </code>
+</pre>
+<p>change that YOUR_USERNAME with your actual user name, then restart the operating system</p>
+<p>After Becoming One From The sudoers, you can run this command if you will run this code from the TERMINAL:</p>
+<pre>
+    <code>
+        sudo chown -R $USER:$USER .
+    </code>
+</pre>
+<p>If You will run it from a browser using apache, you will have to make the owner www-data, which is apache user, to make apache do anything without problems</p>
+<pre>
+    <code>
+        sudo chown -R www-data:www-data .
+    </code>
+</pre>
