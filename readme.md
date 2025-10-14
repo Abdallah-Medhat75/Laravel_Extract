@@ -25,3 +25,5 @@
 <h2 style="color: #2196f3">Notes: </h2>
 <p>The extract file, and the functions.php, the file that has the functions, will be deleted automatically after everything is done, the working extracted laravel project is the only thing will be left after the process is done</p>
 <p>Take a look here to for this deleting script, because both repos are strongly related: https://github.com/Abdallah-Medhat75/Deleting</p>
+<h2>Optimization: </h2>
+<p>Added Small Optimization to the code, first the main extraction ZIP which is called test.zip, was extracting its content twice, I avoided this by making it extracting once, and in the second time the function call the $extractDir doesn't change because of the changed flag $mainExtractDirExist + That made the feedback of the process more logical and clear, I am not sure if it's 100% stable like the old code, but I will find if there's vulnerabilities</p>
